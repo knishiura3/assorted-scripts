@@ -55,7 +55,6 @@ sort -n "${1}" | awk '
     }
 '
 else
-    echo "No input. Feed me one number per line in a text file or pipe them in."
-    echo "Try stats.sh <file> or pipe in from stdin."
+    printf "No input. Feed me one number per line in a text file or pipe them in.\nTry stats.sh <file> or pipe in from stdin.\n"
 fi
 fi
