@@ -29,8 +29,6 @@
 # b d 3
 # c d 5
 
-# take column delimiter from command line.
-
 if [ -f "${4}" ]; then
     LC_ALL=C awk -F"${1}" -v field1="${2}" -v field2="${3}" '!seen[$field1,$field2]++ && !seen[$field2,$field1]++' "${4}"
 else
